@@ -1,0 +1,44 @@
+html {
+    background: linear-gradient(to bottom right, lightskyblue, paleturquoise);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
+    text-transform: capitalize;
+
+    border-bottom: 5px double white; 
+    line-height: 1.5em;
+    margin: 12px 0 20px; 
+}
+
+
+#add_field {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+}
+
+.add_checkbox {
+    border-radius: 50%;
+    width: 10px; 
+    height: 10px;
+}
+
+#tasks {
+    padding-left: 33%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    
+}
