@@ -19,12 +19,16 @@ For each task, show a webpage containing:
 <head>
     <title>To-Do List</title>
     <link rel="stylesheet" href="lab1.css">
+    <script src="https://kit.fontawesome.com/139bddec35.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>To-Do:</h1>
+    <h1><i class="far fa-calendar-check"></i> To-Do: </h1>
     <div id="tasks">
         <div id="add_task">
-            <input type="checkbox" class="add_checkbox">
+            <div class="round">
+                <input type="checkbox" class="add_checkbox" id="task">
+                <label for="task"></label>
+            </div>
             <input type="text" id="add_field" placeholder="add new task">
         </div>
     </div>
