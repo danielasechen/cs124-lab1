@@ -20,16 +20,8 @@ h1 {
 }
 
 
-#add_field {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    
-}
-
-
-/* https://codepen.io/AllThingsSmitty/pen/WjZVjo */
+/* Button design modified from
+   https://codepen.io/AllThingsSmitty/pen/WjZVjo */
 
 .round {
     position: relative;
@@ -40,11 +32,11 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 50%;
     cursor: pointer;
-    height: 28px;
+    width: 18px;
+    height: 18px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 28px;
   }
   
   .round label:after {
@@ -52,13 +44,13 @@ h1 {
     border-top: none;
     border-right: none;
     content: "";
-    height: 6px;
-    left: 7px;
+    height: 5px;
+    left: 3px;
     opacity: 0;
     position: absolute;
-    top: 8px;
+    top: 5px;
     transform: rotate(-45deg);
-    width: 12px;
+    width: 10px;
   }
   
   .round input[type="checkbox"] {
@@ -74,14 +66,28 @@ h1 {
     opacity: 1;
   }
   
-/* end */
-  
+/* end button code */
+
+.task_text {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 20px;
+    font-size: 100%;
+
+}
+
+.task {
+    display: flex;
+    align-content: space-between;
+    column-gap: 8pt;
+}
 
 #tasks {
-    padding-left: 35%;
-    flex-direction: row;
+    flex-direction: column;
+    row-gap: 5pt;
     flex-wrap: wrap;
     align-items: center;
     display: flex;
-    
 }
