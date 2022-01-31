@@ -1,12 +1,12 @@
 <!-- 
-- In an empty list, create an item named "Buy new John Grisham book"
-- In a non-empty list, create an item named "Eat Lunch"
-- Mark the item named "Call Mom" completed (assumes there exists an item named 
+1. In an empty list, create an item named "Buy new John Grisham book"
+2. In a non-empty list, create an item named "Eat Lunch"
+3. Mark the item named "Call Mom" completed (assumes there exists an item named 
     "Call Mom").
-- Rename the item "Text John" to "Text John about bank statements" 
+4. Rename the item "Text John" to "Text John about bank statements" 
     (assumes there exists an item named "Text John").
-- Show only uncompleted items.
-- Delete all completed items.
+5. Show only uncompleted items.
+6. Delete all completed items.
 
 For each task, show a webpage containing:
 - the state of the screen at the beginning of the task
@@ -25,19 +25,23 @@ For each task, show a webpage containing:
     <h1><i class="far fa-calendar-check"></i> To-Do: </h1>
     <div id="tasks">
         <div class="task" id="task_1">
-            <div class="round">
-                <input type="checkbox" class="add_checkbox" id="check2">
+            <div class="reg_round">
+                <input type="checkbox" class="reg_checkbox" id="check2">
                 <label for="check2"></label>
             </div>
             <input type="text" class="task_text" id="task1">
         </div>
         <div class="task" id="add_task">
-            <div class="round">
-                <input type="checkbox" class="add_checkbox" id="check">
+            <div class="add_round">
+                <input type="checkbox" class="add_checkbox" disabled id="check">
                 <label for="check"></label>
             </div>
             <input type="text" class="task_text" id="add_field" placeholder="add new task">
         </div>
+    </div>
+    <div class="buttons">
+        <button type="radio" class="bottom_button" id="clear_complete">Clear All Completed</button>
+        <button type="radio" class="bottom_button" id="show_uncomplete">Show Only Uncomplete</button>
     </div>
 </body>
 
