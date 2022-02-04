@@ -22,7 +22,7 @@ For each task, show a webpage containing:
     <script src="https://kit.fontawesome.com/139bddec35.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1><i class="far fa-calendar-check"></i> To-Do: </h1>
+    <h1> To-Do: <i class="far fa-calendar-check"></i></h1>
     <div id="tasks">
         <div class="task" id="task_1">
             <div class="reg_round">
@@ -33,15 +33,15 @@ For each task, show a webpage containing:
         </div>
         <div class="task" id="add_task">
             <div class="add_round">
-                <input type="checkbox" class="add_checkbox" disabled id="check">
+                <input type="checkbox" class="add_checkbox" id="check">
                 <label for="check"></label>
             </div>
             <input type="text" class="task_text" id="add_field" placeholder="add new task">
         </div>
     </div>
     <div class="buttons">
+        <button type="radio" class="bottom_button" id="show_uncomplete">Show Uncomplete</button>
         <button type="radio" class="bottom_button" id="clear_complete">Clear All Completed</button>
-        <button type="radio" class="bottom_button" id="show_uncomplete">Show Only Uncomplete</button>
     </div>
 </body>
 
