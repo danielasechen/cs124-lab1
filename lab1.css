@@ -1,5 +1,7 @@
 html {
-    background: linear-gradient(to bottom right, rgb(2, 54, 133), rgb(37, 175, 255));
+    /* background: linear-gradient(to bottom right, rgb(2, 54, 133), rgb(37, 175, 255)); */
+    background: linear-gradient(to bottom right, rgb(58, 112, 194), rgb(76, 123, 194)); 
+    /* background: whitesmoke; */
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
@@ -7,28 +9,28 @@ html {
     min-height: 100vh;
 }
 
-h1 {
-    font-size: 350%;
+h1 { 
+    font-size: 420%;
     text-align: left;
     padding-left: 2.54%;
+    /* color: rgb(15, 116, 231); */
     color: white;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bolder;
     text-transform: capitalize;
 
-    border-bottom: 5px double white; 
-    line-height: 1.5em;
-    margin: 12px 0 20px; 
+    /* line-height: 1.5em; */
+    margin: 20px 0 20px; 
     size: 300%;
-    text-shadow: 0 0 2px blue, 0 0 3px rgb(101, 170, 248), 
-                 0 0 3px rgb(101, 170, 248), 0 0 3px rgb(101, 170, 248);
+    padding-bottom: 10px;
+    /* text-shadow: 0 0 2px black, 0 0 0px rgb(101, 170, 248), 
+                 0 0 0px rgb(101, 170, 248), 0 0 0px rgb(101, 170, 248); */
 }
 
 .fa-calendar-check {
-    color: rgb(255, 255, 255);
     position: absolute;
     right: 4%;
-    top: 3%;
+    top: 2%;
 }
 
 
@@ -88,12 +90,14 @@ h1 {
   
 .reg_round input[type="checkbox"]:checked + label {
     background-color: #66bb6a;
-    border-color: white;
+    border-color: #66bb6a;
 }
 
 .add_round input[type="checkbox"] + label {
-    background-color: blue;
-    border-color: white;
+    /* background-color: rgb(15, 116, 231);
+    border-color: rgb(15, 116, 231); */
+    background-color: rgb(179, 146, 255);
+    border-color: rgb(179, 146, 255);
 }
   
 .reg_round input[type="checkbox"]:checked + label:after {
@@ -104,7 +108,8 @@ h1 {
 
 
 .task_text {
-    background: rgba(255, 255, 255, 0.3);
+    /* background: white; */
+    background: rgb(0, 54, 126, 0.582);
     border-radius: 5px;
     border: none;
     outline: none;
@@ -112,6 +117,7 @@ h1 {
     width: 100%;
     
     font-size: 150%;
+    /* color: rgb(78, 78, 78); */
     color: white;
     padding-inline-start: 2%;
 }
@@ -138,7 +144,6 @@ h1 {
     justify-content: center;
     align-items: center;
     column-gap: 18pt;
-    background-color: rgba(255, 255, 255, 0.3);
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -152,7 +157,6 @@ h1 {
     font-size: 150%;
     color: rgb(15, 116, 231);
     background: white;
-    /* border-radius: 7px; */
     /* background: rgb(101, 170, 248);
     background: radial-gradient(rgb(54, 147, 253), rgb(17, 105, 206)); */
     border-radius: 5px;
@@ -173,10 +177,11 @@ h1 {
 }
 
 .bottom_button:hover {
-    background: radial-gradient(rgb(0, 157, 255), rgb(0, 60, 255));
+    background: radial-gradient(rgb(0, 114, 185), rgb(0, 60, 255));
     color: white;
 }
 
 ::placeholder {
-    color: rgb(194, 194, 194);
+    /* color: rgb(78, 78, 78); */
+    color: rgb(177, 177, 177);
 }
