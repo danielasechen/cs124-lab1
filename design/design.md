@@ -10,9 +10,8 @@ so that's where the heaviest part of our to-do list lives. However, we then felt
 
 <img src="/design/Version2.jpeg" alt="The new checkboxes" style="height: 400px; width: 300px;" />
 
-<p> We did a little bit of user testing. Daniela's mom was our most reliable user. We sent her many drafts and she responded with her thoughts almost immediately every time. Next lab we will probably rely on more friends for user testing. We think this will make it easier to decide on design problems that the two of us might disagree on.</p>
+<p> We did a little bit of user testing. Daniela's mom was our most reliable user. We sent her many drafts and she responded with her thoughts almost immediately every time. Next lab we will probably rely on more friends for user testing. We think this will make it easier to decide on design problems that the two of us might disagree on. For instance, she helped us a little with the color scheme of the title and whether or not we should have text effects (e.g. shadows and glows). View an example of a product from this user testing below:</p>
+
+<img src="/design/Version3.jpeg" alt="User Testing Color Schemes" style="height: 400px; width: 300px;" />
 
 <p> We're proud of the icon and how satisfying the hover function looks on the bottom buttons. The right icon was a little bit difficult to find and once we found it and made it fit with the rest of the page, we were pretty excited. And for a while, something felt wrong about the buttons because they were a similar hue to the rest of the page but just felt weird. Then we inverted the background button color and the button font color and made it so that when you hover over a button the colors invert again to a very nice dark blue background and a white text. We think the bottom buttons look quite nice.</p>
-  
-  
-TO BE CONTINUED
