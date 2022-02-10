@@ -1,3 +1,5 @@
+<h1> Our Major Design Decisions </h1>
+
 <p>At first it seemed like the best and most obvious alignment would be to center all the items. We originally wanted the heading and all the tasks to be centered.
 View our original centered template below:</p>
 
