@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-let initialData = [];
+const initialData = [
+    {
+        id: "task1",
+        value: "Buy new John Grisham book",
+        completed: false
+    }
+];
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App initialData={initialData}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
