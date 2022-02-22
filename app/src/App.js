@@ -11,10 +11,10 @@ function App(props) {
 
     const [data, setData] = useState(props.initialData);
 
-    function handleCheck(taskId, isChecked) {
+    function handleCheck(taskId) {
         console.log(taskId);
         const newData = data.map(task => task.id === taskId ?
-                            {...task, ["completed"]:isChecked} : task);
+                            {...task, ["completed"]:!task.completed} : task);
         setData(newData);
         console.log(data);
     }
