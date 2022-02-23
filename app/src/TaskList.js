@@ -9,7 +9,8 @@ function TaskList(props) {
     return <div className="tasks">
         {
             props.data.map(task => <Task key={task.id} {...task}
-                                    onCheck={props.onCheck} />)
+                                    onCheck={props.onCheck}
+                                    onTaskChangeField={props.onTaskChangeField}/>)
         }
     </div>;
 }

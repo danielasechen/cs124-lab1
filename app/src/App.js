@@ -10,6 +10,7 @@ import {useState} from "react";
 function App(props) {
 
     const [data, setData] = useState(props.initialData);
+    const [showOnlyUncomplete, setShowOnlyUncomplete] = useState(false);
 
     function handleCheck(taskId) {
         console.log(taskId);
@@ -19,12 +20,22 @@ function App(props) {
         console.log(data);
     }
 
+    function handleChangeField(taskId, field, value) {
+        setData(data.map(
+            t => t.id === taskId ? {...t, [field]:value} : t
+        ))
+        console.log(data);
+    }
+
+    const filteredData = data.filter(t => !t.completed);
+
     return (
       <div className="App">
         <Header/>
-          <TaskList data={data}
-                    onCheck={handleCheck} />
-          <Buttons clickedShowOnlyUncomplete={false} />
+          <TaskList data={showOnlyUncomplete ? filteredData : data}
+                    onCheck={handleCheck}
+                    onTaskChangeField={handleChangeField}/>
+          <Buttons onToggleCompletedItems={() => setShowOnlyUncomplete(!showOnlyUncomplete)} />
       </div>
     );
 }
