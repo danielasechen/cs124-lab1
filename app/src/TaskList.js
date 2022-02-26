@@ -1,6 +1,7 @@
 import Task from './Task';
 import "./TaskList.css";
 import {useState} from "react";
+import CheckButton from "./CheckButton";
 
 function TaskList(props) {
 
@@ -11,10 +12,7 @@ function TaskList(props) {
                                          onTaskChangeField={props.onTaskChangeField}
                                     />)
         }
-        <Task isAdd={true}
-              value=""
-              onTaskChangeField={props.onTaskChangeField}
-              onAddTask={props.onAddTask} />
+        <CheckButton id="add_task" isAdd={true} onAddTask={props.onAddTask} />
     </div>
 }
 

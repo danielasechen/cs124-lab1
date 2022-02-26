@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header.js';
 import TaskList from './TaskList.js';
-import Buttons from './Buttons.js';
+import BottomButtons from './BottomButtons.js';
 import {useState} from "react";
 
 
@@ -12,6 +12,7 @@ function App(props) {
     const [nextId, setNextId] = useState(data.length + 1);
 
     function handleChangeField(taskId, field, value) {
+        console.log(taskId)
         setData(data.map(
             t => t.id === taskId ? {...t, [field]:value} : t
         ))
@@ -38,9 +39,9 @@ function App(props) {
         <Header/>
           <TaskList data={showOnlyUncomplete ? filteredData : data}
                     onTaskChangeField={handleChangeField}
-                    onAddTask={handleAddTask} />
-          <Buttons onToggleCompletedItems={() => setShowOnlyUncomplete(!showOnlyUncomplete)}
-                   onClearCompletedItems={() => handleClearCompleted()} />
+                    onAddTask={handleAddTask}/>
+          <BottomButtons onToggleCompletedItems={() => setShowOnlyUncomplete(!showOnlyUncomplete)}
+                         onClearCompletedItems={() => handleClearCompleted()} />
       </div>
     );
 }

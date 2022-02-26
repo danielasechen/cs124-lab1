@@ -1,7 +1,7 @@
-import "./Buttons.css";
+import "./BottomButtons.css";
 import {useState} from "react";
 
-function Buttons(props) {
+function BottomButtons(props) {
     // const [showOnlyUncomplete, setShowOnlyUncomplete] = useState(false);
 
     return <div className="buttons">
@@ -14,4 +14,4 @@ function Buttons(props) {
     </div>;
 }
 
-export default Buttons;
+export default BottomButtons;
