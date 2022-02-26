@@ -1,7 +1,7 @@
 
 .tasks {
     flex-direction: column;
-    row-gap: 10pt;
+    row-gap: 8pt;
     flex-wrap: wrap;
     align-items: h;
     padding-left: 2.54%;

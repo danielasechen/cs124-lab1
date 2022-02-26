@@ -1,18 +1,21 @@
 import Task from './Task';
+import "./TaskList.css";
 import {useState} from "react";
 
 function TaskList(props) {
-    // const [showOnlyUncomplete, setShowOnlyUncomplete] = useState(false);
-    // const filteredTasks = props.data.filter(task => !task.completed);
-    // console.log(filteredTasks);
 
     return <div className="tasks">
         {
             props.data.map(task => <Task key={task.id} {...task}
-                                    onCheck={props.onCheck}
-                                    onTaskChangeField={props.onTaskChangeField}/>)
+                                         onTaskChangeField={props.onTaskChangeField}
+                                    />)
         }
-    </div>;
+        <Task id="add_task"
+              value=""
+              key="add_task"
+              onTaskChangeField={props.onTaskChangeField}
+              onAddTask={props.onAddTask} />
+    </div>
 }
 
 export default TaskList;

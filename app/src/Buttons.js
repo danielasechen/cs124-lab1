@@ -8,7 +8,9 @@ function Buttons(props) {
         <button type="radio" className="bottom_button" id="show_uncomplete"
                 onClick={props.onToggleCompletedItems} >
             Show Only Uncomplete</button>
-        <button type="radio" className="bottom_button" id="clear_complete">Clear All Completed</button>
+        <button type="radio" className="bottom_button" id="clear_complete"
+                onClick={props.onClearCompletedItems}>
+            Clear All Completed</button>
     </div>;
 }
 
