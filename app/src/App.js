@@ -11,12 +11,12 @@ function App(props) {
     const [showOnlyUncomplete, setShowOnlyUncomplete] = useState(false);
     const [nextId, setNextId] = useState(data.length + 1);
 
+    const filteredData = data.filter(t => !t.completed);
+
     function handleChangeField(taskId, field, value) {
-        console.log(taskId)
         setData(data.map(
             t => t.id === taskId ? {...t, [field]:value} : t
         ))
-        console.log(data);
     }
 
     function handleClearCompleted() {
@@ -29,10 +29,16 @@ function App(props) {
                           completed: false };
         setNextId(nextId + 1);
         setData([].concat(data, [newTask]));
-        console.log(newTask, data);
     }
 
-    const filteredData = data.filter(t => !t.completed);
+    function handleToggleCompletedItems() {
+        if (filteredData.length === data.length) {
+            console.log("They're the same");
+        }
+        else {
+            setShowOnlyUncomplete(!showOnlyUncomplete);
+        }
+    }
 
     return (
       <div className="App">
@@ -40,7 +46,7 @@ function App(props) {
           <TaskList data={showOnlyUncomplete ? filteredData : data}
                     onTaskChangeField={handleChangeField}
                     onAddTask={handleAddTask}/>
-          <BottomButtons onToggleCompletedItems={() => setShowOnlyUncomplete(!showOnlyUncomplete)}
+          <BottomButtons onToggleCompletedItems={() => handleToggleCompletedItems()}
                          onClearCompletedItems={() => handleClearCompleted()} />
       </div>
     );
