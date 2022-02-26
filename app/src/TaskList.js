@@ -7,12 +7,12 @@ function TaskList(props) {
     return <div className="tasks">
         {
             props.data.map(task => <Task key={task.id} {...task}
+                                         isAdd={false}
                                          onTaskChangeField={props.onTaskChangeField}
                                     />)
         }
-        <Task id="add_task"
+        <Task isAdd={true}
               value=""
-              key="add_task"
               onTaskChangeField={props.onTaskChangeField}
               onAddTask={props.onAddTask} />
     </div>

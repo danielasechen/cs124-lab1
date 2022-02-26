@@ -20,13 +20,12 @@ function App(props) {
 
     function handleClearCompleted() {
         setData(data.filter(task => !task.completed))
-        console.log(data);
     }
 
     function handleAddTask(taskValue) {
         const newTask = { id: "task"+String(nextId),
-            value: taskValue,
-            completed: false };
+                          value: taskValue,
+                          completed: false };
         setNextId(nextId + 1);
         setData([].concat(data, [newTask]));
         console.log(newTask, data);
@@ -39,8 +38,7 @@ function App(props) {
         <Header/>
           <TaskList data={showOnlyUncomplete ? filteredData : data}
                     onTaskChangeField={handleChangeField}
-                    onAddTask={handleAddTask}
-                    nextId={nextId}/>
+                    onAddTask={handleAddTask} />
           <Buttons onToggleCompletedItems={() => setShowOnlyUncomplete(!showOnlyUncomplete)}
                    onClearCompletedItems={() => handleClearCompleted()} />
       </div>

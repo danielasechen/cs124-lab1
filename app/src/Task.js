@@ -2,16 +2,14 @@ import "./Task.css";
 
 function Task(props) {
 
-    const isAddTask = props.id === "add_task";
-
     return <div className="task" id={props.id} >
-        <div className={isAddTask ? "add_round" : "reg_round"}>
-            <input type="checkbox" className={isAddTask? "add_checkbox" : "reg_checkbox"}
-                   disabled={isAddTask}
+        <div className={props.isAdd ? "add_round" : "reg_round"}>
+            <input type="checkbox" className={props.isAdd ? "add_checkbox" : "reg_checkbox"}
+                   disabled={props.isAdd}
                    checked={props.completed}
                    />
                 <label htmlFor="reg_checkbox"
-                       onClick={e => {isAddTask? props.onAddTask(props.value) :
+                       onClick={e => {props.isAdd ? props.onAddTask(props.value) :
                            props.onTaskChangeField(props.id, "completed", !props.completed)}}
                 />
         </div>
@@ -23,7 +21,7 @@ function Task(props) {
                     props.onTaskChangeField(props.id, "value", e.target.value)
             }
             value={props.value}
-            placeholder={isAddTask ? "add new task" : ""}
+            placeholder={props.isAdd ? "add new task" : ""}
         />
     </div>;
 }
