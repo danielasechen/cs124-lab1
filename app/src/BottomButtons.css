@@ -6,9 +6,8 @@
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    width: 101%;
+    width: 100%;
     height: 11.5%;
-    margin-left: -1.5%;
 }
 
 .bottom_button {
@@ -28,11 +27,11 @@
 
 
 #show_uncomplete {
-    margin-left: 4%;
+    margin-left: 2.5%;
 }
 
 #clear_complete {
-    margin-right: 4%;
+    margin-right: 2.5%;
 }
 
 .bottom_button:hover {
