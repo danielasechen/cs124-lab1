@@ -35,7 +35,6 @@ This design is pictured below.
 
 <img src="/design/Version4.png" alt="Dual Add UI" style="height: 400px; width: 300px;" />
 </br>
-</br>
 
 <p>However, grutor Marcos Acosta pointed out that dual add options made for a confusing UI. He suggested that we remove the text box to the right of the add button and only implement the second method, where the user must first create a new task, then change the placeholder text. This new design is shown below, and we agree that it is much clearer. </p>
 
