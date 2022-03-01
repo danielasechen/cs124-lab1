@@ -31,14 +31,27 @@ function App(props) {
         setData([].concat(data, [newTask]));
     }
 
-    function handleToggleCompletedItems() {
-        if (filteredData.length === data.length) {
-            console.log("They're the same");
-        }
-        else {
-            setShowOnlyUncomplete(!showOnlyUncomplete);
-        }
+    const regBgColor = "white";
+    const newBgColor = "radial-gradient(rgb(0, 114, 185), rgb(0, 60, 255))";
+    const regTxtColor = "rgb(15, 116, 231)";
+    const newTxtColor = "white";
+
+    function handleToggleCompletedItems(event) {
+        setShowOnlyUncomplete(!showOnlyUncomplete);
+        event.target.style.color = showOnlyUncomplete ? regTxtColor : newTxtColor;
+        event.target.style.background = showOnlyUncomplete ? regBgColor : newBgColor;
     }
+
+    function mouseOver(event) {
+        event.target.style.background = showOnlyUncomplete ? regBgColor : newBgColor;
+        event.target.style.color = showOnlyUncomplete ? regTxtColor : newTxtColor;
+    }
+
+    function mouseOut(event) {
+        event.target.style.background = showOnlyUncomplete ? newBgColor : regBgColor;
+        event.target.style.color = showOnlyUncomplete ? newTxtColor : regTxtColor;
+    }
+
 
     return (
       <div className="App">
@@ -46,8 +59,10 @@ function App(props) {
           <TaskList data={showOnlyUncomplete ? filteredData : data}
                     onTaskChangeField={handleChangeField}
                     onAddTask={handleAddTask}/>
-          <BottomButtons onToggleCompletedItems={() => handleToggleCompletedItems()}
-                         onClearCompletedItems={() => handleClearCompleted()} />
+          <BottomButtons onToggleCompletedItems={(e) => handleToggleCompletedItems(e)}
+                         onClearCompletedItems={() => handleClearCompleted()}
+                         onMouseOver={(e) => mouseOver(e)}
+                         onMouseOut={(e) => mouseOut(e)}/>
       </div>
     );
 }
