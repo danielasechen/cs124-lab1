@@ -1,7 +1,5 @@
 <h1> Our Major Design Decisions </h1>
 
-<hr>
-
 <h3>Lab 1 Design</h3>
 
 <p>At first it seemed like the best and most obvious alignment would be to center all the items. We originally wanted the heading and all the tasks to be centered.
@@ -41,18 +39,18 @@ This design is pictured below.
 
 <p>However, grutor Marcos Acosta pointed out that dual add options made for a confusing UI. He suggested that we remove the text box to the right of the add button and only implement the second method, where the user must first create a new task, then change the placeholder text. This new design is shown below, and we agree that it is much clearer. </p>
 
-<img src="/design/add-ex1.png" alt="New add task interface, before add" style="height: 400px" /> | <img src="/design/add-ex2.png" alt="New add task interface, after add" style="height: 400px" /> 
-- | -
-<p> Before the add button is clicked </p> | <p> After the add button is clicked </p>
+| <img src="/design/add-ex1.png" alt="New add task interface, before add" style="height: 400px" /> | <img src="/design/add-ex2.png" alt="New add task interface, after add" style="height: 400px" /> |
+| --- | --- |
+| <p> Before the add button is clicked </p> | <p> After the add button is clicked </p> |
 
 </br>
 
 Another important decision involved the "Show Only Uncomplete" button. After implementing its toggle functionality (one click hides all completed items; another click brings them back), we realized that users would have no way of knowing whether "Show Only Uncomplete" was on or not. To erase this confusion, we decided to make the button blue when it is toggled.
 
 
-<img src="/design/toggle-ex2.png" alt="Before Show Only Uncomplete toggle, before add" style="height: 400px" />  | <img src="/design/toggle-ex1.png" alt="After Show Only Uncomplete toggle, before add" style="height: 400px" /> 
-- | -
-<p> Before Show Only Uncomplete is toggled </p> | <p> After Show Only Uncomplete is toggled </p>
+| <img src="/design/toggle-ex2.png" alt="Before Show Only Uncomplete toggle, before add" style="height: 400px" />  | <img src="/design/toggle-ex1.png" alt="After Show Only Uncomplete toggle, before add" style="height: 400px" /> |
+| --- | --- |
+| <p> Before Show Only Uncomplete is toggled </p> | <p> After Show Only Uncomplete is toggled </p> |
 
 
 
