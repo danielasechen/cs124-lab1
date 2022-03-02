@@ -62,7 +62,8 @@ function App(props) {
           <BottomButtons onToggleCompletedItems={(e) => handleToggleCompletedItems(e)}
                          onClearCompletedItems={() => handleClearCompleted()}
                          onMouseOver={(e) => mouseOver(e)}
-                         onMouseOut={(e) => mouseOut(e)}/>
+                         onMouseOut={(e) => mouseOut(e)}
+                         isShowOnlyUncomplete={showOnlyUncomplete}/>
       </div>
     );
 }

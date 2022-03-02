@@ -18,6 +18,7 @@ function Task(props) {
                     (e) =>
                         props.onTaskChangeField(props.id, "value", e.target.value)
                 }
+                onBlur={() => console.log("Blurred")}
                 value={props.value}
                 placeholder={"Add new task"}
             />
