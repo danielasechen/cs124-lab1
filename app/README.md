@@ -1,6 +1,6 @@
 # To Do List
 
-An application for CS124 Lab. Please click [here]() to run.
+An application for CS124 Lab. Please click [here](https://noahnevens.github.io/cs124-lab2/) to run.
 
 #### Functionality:
 
