@@ -4,27 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b40c756-9b32-4923-89c8-9b22be9aac09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TaskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TaskList.js" afterDir="false" />
+    <list default="true" id="4c1a342f-6557-42a2-baac-8c7c45430db0" name="Changes" comment="updating readme">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="25IhWdxJIRXYnYXG8tuf917b59D" />
+  <component name="ProjectId" id="25IhcCettXddxFeikmPmvxWSgup" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,16 +44,46 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/app/package.json" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="install gh-pages" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="install gh-pages" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="start" />
@@ -51,22 +92,123 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.install gh-pages" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9b40c756-9b32-4923-89c8-9b22be9aac09" name="Changes" comment="" />
-      <created>1645220543821</created>
+      <changelist id="4c1a342f-6557-42a2-baac-8c7c45430db0" name="Changes" comment="" />
+      <created>1645220585116</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645220543821</updated>
-      <workItem from="1645220545412" duration="39000" />
-      <workItem from="1645573719319" duration="1135000" />
-      <workItem from="1645576021218" duration="7224000" />
+      <updated>1645220585116</updated>
+      <workItem from="1645220586376" duration="3885000" />
+      <workItem from="1645332681347" duration="29347000" />
+      <workItem from="1645914762566" duration="11959000" />
     </task>
+    <task id="LOCAL-00001" summary="we got started!">
+      <created>1645224283572</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645224283572</updated>
+    </task>
+    <task id="LOCAL-00002" summary="button works w/o label">
+      <created>1645510240548</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645510240548</updated>
+    </task>
+    <task id="LOCAL-00003" summary="IT  WORKS NOW">
+      <created>1645511106611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645511106611</updated>
+    </task>
+    <task id="LOCAL-00004" summary="clear all works; new task doesn't work">
+      <created>1645838568950</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645838568950</updated>
+    </task>
+    <task id="LOCAL-00005" summary="friday night hoch sucks">
+      <created>1645843141359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645843141360</updated>
+    </task>
+    <task id="LOCAL-00006" summary="icon is there; new task makes more sense">
+      <created>1645916835160</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645916835160</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed show only uncomplete">
+      <created>1645917273467</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645917273467</updated>
+    </task>
+    <task id="LOCAL-00008" summary="final code">
+      <created>1646104650547</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646104650548</updated>
+    </task>
+    <task id="LOCAL-00009" summary="new icon! (we hope)">
+      <created>1646105670411</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646105670414</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updating readme">
+      <created>1646159469280</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646159469280</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="we got started!" />
+    <MESSAGE value="button works w/o label" />
+    <MESSAGE value="IT  WORKS NOW" />
+    <MESSAGE value="clear all works; new task doesn't work" />
+    <MESSAGE value="friday night hoch sucks" />
+    <MESSAGE value="icon is there; new task makes more sense" />
+    <MESSAGE value="fixed show only uncomplete" />
+    <MESSAGE value="final code" />
+    <MESSAGE value="new icon! (we hope)" />
+    <MESSAGE value="updating readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating readme" />
   </component>
 </project>
