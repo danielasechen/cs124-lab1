@@ -18,7 +18,7 @@ function Task(props) {
                     (e) =>
                         props.onTaskChangeField(props.id, "value", e.target.value)
                 }
-                onBlur={() => console.log("Blurred")}
+                onBlur={() => {if (props.value === "") {props.onItemDeleted(props.id)}} }
                 value={props.value}
                 placeholder={"Add new task"}
             />

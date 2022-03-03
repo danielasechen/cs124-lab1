@@ -11,6 +11,10 @@
     padding-inline-start: 2%;
 }
 
+input:focus {
+    background-color: rgb(5, 35, 75);
+}
+
 .task {
     display: flex;
     align-content: space-between;
