@@ -9,7 +9,7 @@ function BottomButtons(props) {
                 onClick={props.onToggleCompletedItems}
                 onMouseOver={props.onMouseOver}
                 onMouseOut={props.onMouseOut} >
-            Show Only Uncomplete</button>
+            {props.isShowOnlyUncomplete ? "Show All" : "Show Only Uncomplete"}</button>
         <button type="radio" className="bottom_button" id="clear_complete"
                 onClick={props.onClearCompletedItems} >
             Clear All Completed</button>

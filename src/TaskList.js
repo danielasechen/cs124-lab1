@@ -9,6 +9,7 @@ function TaskList(props) {
             props.data.map(task => <Task key={task.id} {...task}
                                          isAdd={false}
                                          onTaskChangeField={props.onTaskChangeField}
+                                         onItemDeleted={props.onItemDeleted}
                                     />)
         }
         <CheckButton id="add_task" isAdd={true} onAddTask={props.onAddTask} />

@@ -19,11 +19,20 @@ function App(props) {
         ))
     }
 
+    function handleItemDeleted(taskID) {
+        setData(data.filter((task) => task.id !== taskID));
+    }
+
     function handleClearCompleted() {
         setData(data.filter(task => !task.completed))
     }
 
     function handleAddTask(taskValue) {
+        for (let task in data) {
+            if (task.value === "" || task.value === "Add new task") {
+                console.log("Empty Item");
+            }
+        }
         const newTask = { id: "task"+String(nextId),
                           value: taskValue,
                           completed: false };
@@ -58,11 +67,13 @@ function App(props) {
         <Header/>
           <TaskList data={showOnlyUncomplete ? filteredData : data}
                     onTaskChangeField={handleChangeField}
-                    onAddTask={handleAddTask}/>
+                    onAddTask={handleAddTask}
+                    onItemDeleted={handleItemDeleted}/>
           <BottomButtons onToggleCompletedItems={(e) => handleToggleCompletedItems(e)}
                          onClearCompletedItems={() => handleClearCompleted()}
                          onMouseOver={(e) => mouseOver(e)}
-                         onMouseOut={(e) => mouseOut(e)}/>
+                         onMouseOut={(e) => mouseOut(e)}
+                         isShowOnlyUncomplete={showOnlyUncomplete}/>
       </div>
     );
 }
