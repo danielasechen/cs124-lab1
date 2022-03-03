@@ -44,7 +44,9 @@ This design is pictured below.
 
 </br>
 
-Another important decision involved the "Show Only Uncomplete" button. After implementing its toggle functionality (one click hides all completed items; another click brings them back), we realized that users would have no way of knowing whether "Show Only Uncomplete" was on or not. To erase this confusion, we decided to make the button blue when it is toggled.
+Other important decisions involved the "Show Only Uncomplete" button. After implementing its toggle functionality (one click hides all completed items; another click brings them back), we realized that users would have no way of knowing whether "Show Only Uncomplete" was on or not. To erase this confusion, we decided to make the button blue when it is toggled. 
+
+Marcos also noted that it makes more sense for the "Show Only Uncomplete" button to say "Show All" when it is toggled. In other words, if only the uncomplete tasks are showing, it makes no sense that you would re-click "Show Only Uncomplete" to re-display the completed items. Instead, when only the uncomplete items are showing, the button now says "Show All," indicating that you have the option to re-display all of the tasks. 
 
 
 | <img src="/design/toggle-ex2.png" alt="Before Show Only Uncomplete toggle, before add" style="height: 400px" />  | <img src="/design/toggle-ex1.png" alt="After Show Only Uncomplete toggle, before add" style="height: 400px" /> |
@@ -52,4 +54,6 @@ Another important decision involved the "Show Only Uncomplete" button. After imp
 | <p> Before Show Only Uncomplete is toggled </p> | <p> After Show Only Uncomplete is toggled </p> |
 
 
+We asked another user, Anshul Kamath, to give feedback on our app. He noticed that it was possible to have several empty tasks at once and that this was kind of strange. After adding a new task, you should type something in that box before adding a new task. We made it so that if there is a blank new task, you cannot add another new task before text is added to the original new task. Furthermore, if your cursor is focused on a task and then you click off the task and the box is empty, then the task is deleted. The app assumes that if you backspace an entire task or add a task but don't type anything in it, then you want to delete it.
 
+We also had a user tell us that it would be useful if there was some feedback for when you type in a text box. So we made the text box darker when you start typing in it. 

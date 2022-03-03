@@ -28,9 +28,9 @@ function App(props) {
     }
 
     function handleAddTask(taskValue) {
-        for (let task in data) {
-            if (task.value === "" || task.value === "Add new task") {
-                console.log("Empty Item");
+        for (const task of data) {
+            if (task.value === "") {
+                return;
             }
         }
         const newTask = { id: "task"+String(nextId),

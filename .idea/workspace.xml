@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4c1a342f-6557-42a2-baac-8c7c45430db0" name="Changes" comment="adding to show only uncomplete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +61,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -99,6 +101,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.deploy" />
+        <item itemvalue="Node.js.App.js" />
         <item itemvalue="npm.install gh-pages" />
       </list>
     </recent_temporary>
@@ -115,6 +118,7 @@
       <workItem from="1645332681347" duration="29347000" />
       <workItem from="1645914762566" duration="11959000" />
       <workItem from="1646262123605" duration="3447000" />
+      <workItem from="1646280195331" duration="1387000" />
     </task>
     <task id="LOCAL-00001" summary="we got started!">
       <created>1645224283572</created>
