@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1a342f-6557-42a2-baac-8c7c45430db0" name="Changes" comment="adding to show only uncomplete">
+    <list default="true" id="4c1a342f-6557-42a2-baac-8c7c45430db0" name="Changes" comment="THERE IS STILL AN ERROR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BottomButtons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/BottomButtons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BottomButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BottomButtons.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +118,7 @@
       <workItem from="1645914762566" duration="11959000" />
       <workItem from="1646262123605" duration="3447000" />
       <workItem from="1646280195331" duration="1387000" />
-      <workItem from="1646866669137" duration="1056000" />
+      <workItem from="1646866669137" duration="2318000" />
     </task>
     <task id="LOCAL-00001" summary="we got started!">
       <created>1645224283572</created>
@@ -199,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646264087624</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="THERE IS STILL AN ERROR">
+      <created>1646867760379</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1646867760379</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +233,7 @@
     <MESSAGE value="new icon! (we hope)" />
     <MESSAGE value="updating readme" />
     <MESSAGE value="adding to show only uncomplete" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding to show only uncomplete" />
+    <MESSAGE value="THERE IS STILL AN ERROR" />
+    <option name="LAST_COMMIT_MESSAGE" value="THERE IS STILL AN ERROR" />
   </component>
 </project>
