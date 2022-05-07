@@ -1,0 +1,10 @@
+
+.tasks {
+    flex-direction: column;
+    row-gap: 8pt;
+    flex-wrap: wrap;
+    align-items: h;
+    padding-left: 2.54%;
+    padding-right: 2.54%;
+    display: flex;
+}

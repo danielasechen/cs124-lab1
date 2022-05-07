@@ -1,0 +1,53 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth.uid != null;
+    }
+
+    function isListOwner(doc) {
+      return request.auth.uid == doc.data.owner;
+    }
+
+    function updatedDocHasCorrectOwner() {
+      return request.auth.uid == request.resource.data.owner;
+    }
+
+    function updatedDocHasSameOwner() {
+      return resource.data.owner == request.resource.data.owner;
+    }
+    
+    function updatedDocHasSameSharing() {
+      return resource.data.sharedWith == request.resource.data.sharedWith;
+    }
+
+    function isListSharedWithMe(doc) {
+      return request.auth.token.email in doc.data.sharedWith;
+    }
+        
+    function didNotUnshare() {
+      return request.resource.data.sharedWith.hasAll(resource.data.sharedWith.removeAll([request.auth.token.email]));
+    }
+    
+    function isSharingOkay(doc) {
+    	return isListOwner(doc) || didNotUnshare();
+    }
+    
+    match /task-lists/{list} {
+      allow read: if signedIn() && isListSharedWithMe(resource);
+      allow create: if signedIn() && updatedDocHasCorrectOwner();
+      allow update: if signedIn() && isListSharedWithMe(resource) &&
+        updatedDocHasSameOwner() && isSharingOkay(resource);
+      allow delete: if signedIn() && isListOwner(resource);
+      
+      match /tasks/{task} {
+        allow read: if signedIn() && isListSharedWithMe(get(/databases/$(database)/documents/task-lists/$(list)));
+        allow create: if signedIn() && isListSharedWithMe(get(/databases/$(database)/documents/task-lists/$(list)));
+        allow update: if signedIn() && isListSharedWithMe(get(/databases/$(database)/documents/task-lists/$(list)));
+      	allow delete: if signedIn() && isListOwner(get(/databases/$(database)/documents/task-lists/$(list)));
+        
+      }
+    }
+    
+  }
+}
